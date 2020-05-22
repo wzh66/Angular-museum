@@ -1,27 +1,30 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {AppRoutingModule} from './app-routing.module';
 
-import { AppComponent } from './app.component';
-import { AboutComponent } from './pages/about/about.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { ResearchComponent } from './pages/research/research.component';
+import {ThemeModule} from './@theme/theme.module';
 
-import { NewsDetailsComponent } from './pages/news-details/news-details.component';
+import {INTERCEPTORS} from './@core/interceptors';
+
+
+import {AppComponent} from './app.component';
+
+import {environment} from '../environments/environment';
 import {IndexComponent} from './pages/index/index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent,
-    AboutComponent,
-    ContactComponent,
-    ResearchComponent,
-    NewsDetailsComponent
+    IndexComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [INTERCEPTORS, {provide: 'PREFIX_URL', useValue: environment.prefix_url}],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

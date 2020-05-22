@@ -26,6 +26,7 @@ import {SInfiniteLoaderModule} from './modules/infiniteloader';
 import {COMPONENTS, DIRECTIVES, PIPES} from './index';
 import { SearchComponent } from './modules/search-bar/search.component';
 import {SearchModule} from './modules/search-bar/search.module';
+import {MatCommonModule} from '@angular/material/core';
 
 @NgModule({
   imports: [

@@ -1,0 +1,130 @@
+/* You can add global styles to this file, and also import other style files */
+@import "sass/icon";
+@import "app/@theme/theme";
+@import "sass/mixin.scss";
+@import "sass/swipe";
+@import "sass/weui/panel";
+@import "sass/weui/stepper";
+@import "sass/weui/actionSheet";
+@import "sass/weui/button";
+@import "sass/weui/cells";
+@import "sass/weui/infiniteloader";
+@import "sass/button";
+@import "sass/weui/tab";
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-size: 12px
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+i {
+  font-style: normal;
+}
+
+em {
+  color: #F43530;
+  font-style: normal;
+
+  &.money {
+    .rmb {
+      font-size: 75%;
+    }
+
+    .decimal {
+      font-size: 75%;
+    }
+  }
+}
+
+.right {
+  float: right;
+}
+.left{
+  float: left;
+}
+.img-box {
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+body {
+  margin: 0;
+  font-size: 0.13rem;
+}
+
+.icons {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  font-size: inherit;
+}
+
+.weui-grids, .weui-grid {
+  &:before, &:after {
+    display: none;
+  }
+}
+
+.content-scrollable {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  background: #fafafa;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  &.padding-header {
+    padding-top: 0.48rem;
+  }
+
+  &.padding-footer {
+    &:after {
+      content: '';
+      display: block;
+      height: 0.5rem;
+    }
+  }
+}
+
+.search-bar{
+  width: 95%;
+  height: 0.34rem;
+  background: #f5f5f5;
+  text-align: center;
+  font-size: 0.14rem;
+  color: #999;
+  margin: 0.1rem auto;
+  border-radius: 50px;
+
+  .search {
+    color: #999;
+    display: block;
+    padding-top: 0.08rem;
+    .icon-search{
+      padding-right: 0.06rem;
+    }
+  }
+}
+
+

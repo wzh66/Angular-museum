@@ -12,11 +12,17 @@ import {AppComponent} from './app.component';
 
 import {environment} from '../environments/environment';
 import {IndexComponent} from './pages/index/index.component';
+import {NewsDetailsComponent} from './pages/news-details/news-details.component';
+import {AboutComponent} from './pages/about/about.component';
+import { AboutInstituteComponent } from './pages/about/about-institute/about-institute.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent
+    IndexComponent,
+    NewsDetailsComponent,
+    AboutComponent,
+    AboutInstituteComponent
   ],
   imports: [
     BrowserModule,

@@ -14,9 +14,7 @@
 
 
 html, body {
-  height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 
 body {
@@ -130,24 +128,65 @@ body {
 
 
 
-.header{height:8.3rem; background: #1A6F97; position: fixed; z-index: 10; top:0;left:0;right:0;
+.header{height:4.17rem; background: #1A6F97; position: fixed; z-index: 10; top:0;left:0;right:0;
 
-  .logo{width:23.83rem; position: absolute;top:1.67rem;left:2.5rem;font-size:0;
+  .logo{width:11.92rem; position: absolute;top:0.83rem;left:1.25rem;font-size:0;
 
     img{width:100%;}
   }
 
-  .title{}
+  .title{text-align: center;font-size:1.5rem;color:#fff;line-height:4.17rem;}
 
-  .nav{width:6.67rem;height:5rem;padding-top:0.5rem;border:1px solid #67BCE4;border-radius:0.5rem; position: absolute;right:2.5rem;top:1.67rem;text-align: center;
+  .nav{width:3.33rem;height:2.2rem;padding-top:0.25rem;border:1px solid #67BCE4;border-radius:0.25rem; position: absolute;right:1.25rem;top:0.83rem;text-align: center;
 
-    b{width:3.67rem;height:0.33rem;margin-top:0.67rem; background: #67BCE4;}
+    b{width:1.83rem;height:0.17rem;margin-top:0.33rem;margin-left:0.75rem;background: #67BCE4; display:block}
   }
 
+  .btn-back{position: absolute;left:1.25rem;top:2rem;padding-left: 1rem;font-size:1rem;font-weight:normal}
+  .btn-back:after{content: "";width:0.8rem;height:0.8rem;border-top:1px solid #fff;border-left:1px solid #fff;transform:rotate(-45deg); position: absolute;left:0;top:-0.2rem;}
+
+}
+.container{margin:4.17rem 0 0 0; position: relative}
+
+.panelbox{padding:0 1.25rem;}
+
+.pop-cover{width: 100%;height:100%; background: rgba(0,0,0,0.8);position: fixed;z-index: 15;display: none}
+.nav-list{width:66%;background: #1A6F97;position: fixed;z-index: 20;right:0;top:0;bottom:0;color:#fff;
+
+  ul{margin-top:4.17rem;}
+  ul li{padding:0 1.25rem;line-height:3.3rem;position: relative;}
+  ul li.active{background: #2089BB}
+  ul li i{width:0.6rem;height:0.6rem;border-top:1px solid #fff;border-right:1px solid #fff;transform:rotate(130deg);display:block; position: absolute;right:1.5rem;top:1.15rem;}
+  ul li.active i{transform:rotate(-45deg);top:1.5rem;}
+  ul li ul{margin-top:0; display:none}
+  ul li ul li{color:#9AD2ED;margin-left:-1.25rem;margin-right:-1.25rem;padding-left:2.25rem;border-bottom:1px dashed #488CAC; position: relative;}
+  ul li ul li:before{content: "";width:0.4rem;height:0.4rem; background: #67BCE4;transform:rotate(45deg); position: absolute;left:1.25rem;top:1.4rem;}
+  ul li.active ul li{background: #1A6F97}
+
+  .btn-close{padding:1.45rem 0;width:4.17rem;height:1.25rem;font-size:2rem;font-weight:normal;line-height: 1.25rem !important; position:absolute;right:0;}
+
 }
 
-.pop-cover{width: 100%;height:100%; background: rgba(0,0,0,0.8);position: fixed;z-index: 15;}
-.nav-list{width:66%;background: #1A6F97;position: fixed;z-index: 20;right:0;top:0;
+.menu-slide{width:100%;height:4.17rem;border-bottom:1px solid #ddd; overflow-x: auto; position:absolute;top:0; }
+.menu-slide ul li{padding:0 1.25rem;line-height:4.17rem;color:#666; display: inline-block; position: relative;}
+.menu-slide ul li.active{color:#2497CE;}
+.menu-slide ul li.active:after{content: "";width:2rem;height:0.17rem;position: absolute;left:50%;bottom:0;margin-left:-1rem; background: #2497CE;}
 
-  .btn-close{padding:1.25rem 0;height:2.5rem;}
-}
+.list-block-news{padding:4.17rem 1.25rem 0 1.25rem;}
+.list-block-news ul li{padding:1.75rem 0;border-bottom:1px solid #eee;font-size:0; display: flex}
+.list-block-news ul li:last-child{border-bottom:none}
+.list-block-news ul li img{width:7.5rem;height:7.5rem;border-radius:0.25rem;}
+.list-block-news ul li .text{width:70%;margin-left:1rem;}
+.list-block-news ul li h3{font-size:1.17rem;color:#000;line-height:1.6rem;max-height:3.2rem; display: -webkit-box; -webkit-box-orient: vertical;  -webkit-line-clamp:2; overflow: hidden;}
+.list-block-news ul li p{font-size:1rem;color:#999;line-height:1.4rem;margin-top:0.3rem;max-height:4.2rem;display: -webkit-box;
+  -webkit-box-orient: vertical;  -webkit-line-clamp: 3; overflow: hidden;}
+
+h1{padding:1.5rem 0; text-align: center;line-height:2rem;font-size:1.5rem;color:#000;}
+.news-inf{padding:0 0 1rem 0;font-size:0.9rem;color:#999; text-align: center;border-bottom: 1px solid #eee;}
+.text-details{padding:1rem 0;line-height:2rem;font-size:1.1rem;color:#333;}
+.text-details p{padding:0.5rem 0;}
+.text-details img{margin:0 auto;max-width: 100%;display: inherit;}
+
+
+
+
